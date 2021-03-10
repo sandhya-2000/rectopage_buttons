@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/AlertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Button1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/AlertTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AlertButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Click Received!"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/ToastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:onClick="onClick"
+        android:text="Button2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/AlertButton"
+        tools:ignore="OnClick" />
+
+
+</LinearLayout>
